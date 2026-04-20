@@ -1,4 +1,4 @@
-
+import os
 import requests
 from azure.storage.blob import BlobServiceClient
 
@@ -12,14 +12,18 @@ def main():
     # Define the container name
     container_name = "azurepublicdataset"
 
+
+    download_folder = "c:\\temp\\downloaded_files"
+    os.makedirs(download_folder, exist_ok=True)
+
     # List all blobs in the container
     container_client = blob_service_client.get_container_client(container_name)
 
     print(f"Listing files in container: {container_name}")
     for blob in container_client.list_blobs():
-      #  print(blob.name)
-        if blob.name.endswith(".csv.gz"):
-           print(blob.name)
-
+            if blob.name.endswith(".csv.gz"):
+               print(blob.name)
+    
+print("complete.")    
 if __name__ == "__main__":
     main()
