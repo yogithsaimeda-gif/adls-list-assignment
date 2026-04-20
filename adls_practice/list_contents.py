@@ -1,6 +1,5 @@
 
 import requests
-
 from azure.storage.blob import BlobServiceClient
 
 def main():
