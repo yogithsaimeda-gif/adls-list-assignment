@@ -17,7 +17,7 @@ def main():
 
     print(f"Listing files in container: {container_name}")
     for blob in container_client.list_blobs():
-        print(blob.name)
+      #  print(blob.name)
         if blob.name.endswith(".csv.gz"):
            print(blob.name)
 
