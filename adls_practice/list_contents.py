@@ -20,3 +20,6 @@ def main():
         print(blob.name)
         if blob.name.endswith(".csv.gz"):
            print(blob.name)
+
+if __name__ == "__main__":
+    main()
