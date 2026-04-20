@@ -1,5 +1,3 @@
-import requirements
-### `list_contents.py`
 from azure.storage.blob import BlobServiceClient
 
 def main():

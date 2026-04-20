@@ -1,5 +1,4 @@
-### `adls_list.yml`
-```yaml
+
 name: Run ADLS List Script
 
 on:
@@ -26,4 +25,4 @@ jobs:
     - name: Run ADLS List script
       run: |
         python adls_practice/list_contents.py
-```
+

@@ -1,5 +1,4 @@
-### `requirements.txt`
-```plaintext
 azure-storage-blob==12.16.0
 six
-```
+
+
