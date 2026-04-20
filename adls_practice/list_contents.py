@@ -13,8 +13,8 @@ def main():
     container_name = "azurepublicdataset"
 
 
-    download_folder = "c:\\temp\\downloaded_files"
-    os.makedirs(download_folder, exist_ok=True)
+   # download_folder = "c:\\temp\\downloaded_files"
+    #os.makedirs(download_folder, exist_ok=True)
 
     # List all blobs in the container
     container_client = blob_service_client.get_container_client(container_name)
